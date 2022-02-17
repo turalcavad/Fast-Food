@@ -21,3 +21,14 @@
 	font-size: 1.1rem;
 	font-weight: 400;
 }
+
+@mixin mobile-nav {
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: $color-main-black;
+}
+@mixin flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
