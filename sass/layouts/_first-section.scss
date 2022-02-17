@@ -1,0 +1,102 @@
+html,
+body {
+	overflow-x: hidden;
+}
+.first-section {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	height: 100vh;
+	background-image: url("http://fast-food.bold-themes.com/main-demo/wp-content/uploads/sites/2/2017/06/background-pizza-home-top.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	header {
+		.header-content-wrapper {
+			display: flex;
+			justify-content: space-around;
+			.header-left-side {
+				display: flex;
+			}
+			.social-media-wrapper {
+				ul li a .fab,
+				.fa-brands {
+					transition: 0.3s;
+					font-size: 1.6rem;
+					&:hover {
+						color: $color-vivid-red;
+					}
+				}
+				ul {
+					display: flex;
+				}
+				ul li {
+					margin: 0 10px;
+				}
+			}
+		}
+	}
+	header .desktop-menu {
+		display: flex;
+		align-items: center;
+	}
+	nav ul {
+		display: flex;
+	}
+	nav ul li {
+		display: inline-block;
+		margin: 0 25px;
+	}
+	nav ul li a {
+		color: #ffffff;
+		font-size: 1.7rem;
+		font-weight: 600;
+		letter-spacing: -1px;
+		transition: 0.3s;
+		&:hover {
+			color: $color-vivid-red;
+		}
+	}
+	.first-section-text {
+		justify-content: center;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+	}
+	.main-section-title {
+		text-align: center;
+
+		span {
+			color: #ffffff;
+			font-size: 2.4rem;
+		}
+		h1 {
+			color: #ffffff;
+			font-size: 9.6rem;
+			font-weight: bold;
+		}
+	}
+}
+.our-menu-btn-wrapper {
+	display: flex;
+	justify-content: center;
+	a:hover {
+		color: #75d007;
+	}
+	.our-menu-btn {
+		transition: 0.5s;
+		font-weight: 500;
+		text-align: center;
+		background-color: #75d007;
+		font-size: 1.6rem;
+		padding: 1rem;
+		margin: 0 auto;
+		width: 15rem;
+		height: 5rem;
+		border: 2px solid #75d007;
+		&:hover {
+			background-color: transparent;
+		}
+	}
+}
