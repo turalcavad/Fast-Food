@@ -326,7 +326,6 @@ body {
 }
 
 .mobile-menu {
-  display: none;
   width: 32rem;
   position: fixed;
   top: 0;
@@ -372,7 +371,7 @@ body {
   background-color: green;
 }
 
-.social-media-wrapper,
+#socialMediaWrapper,
 .mobile-nav {
   margin-top: 30px;
 }
@@ -403,6 +402,84 @@ body {
 .sidebar-active {
   margin-left: 0;
   display: block;
+}
+
+.our-menu-section {
+  background-image: url("http://fast-food.bold-themes.com/main-demo/wp-content/uploads/sites/2/2017/06/background-tree-white.jpg");
+}
+
+.main-our-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.our-menu-title {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.our-menu-title h2 {
+  font-size: 6.4rem;
+  color: #ff0000;
+  letter-spacing: -4px;
+  font-weight: bold;
+}
+
+.our-menu-title span {
+  font-size: 2rem;
+  color: #333333;
+  opacity: 0.6;
+  letter-spacing: -1px;
+}
+
+.our-menu-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.our-menu-item {
+  padding: 0 40px;
+}
+
+.our-menu-item-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.our-menu-item-text h4 {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: -1px;
+  color: #1e1d23;
+}
+
+.our-menu-item-text span {
+  font-size: 1.4rem;
+  color: #333333;
+  opacity: 0.6;
+  letter-spacing: -1px;
 }
 
 @media screen and (max-width: 991px) {

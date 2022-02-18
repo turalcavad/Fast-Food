@@ -108,7 +108,7 @@ body {
 
 //mobile sidebar
 .mobile-menu {
-	display: none;
+	// display: none;
 	width: 32rem;
 	position: fixed;
 	top: 0;
@@ -139,7 +139,7 @@ body {
 		background-color: green;
 	}
 }
-.social-media-wrapper,
+#socialMediaWrapper,
 .mobile-nav {
 	margin-top: 30px;
 }

@@ -1,0 +1,40 @@
+.our-menu-section {
+	background-image: url("http://fast-food.bold-themes.com/main-demo/wp-content/uploads/sites/2/2017/06/background-tree-white.jpg");
+}
+.main-our-menu {
+	@include flex-column;
+	align-items: center;
+}
+.our-menu-title {
+	padding: 100px 0;
+	text-align: center;
+	h2 {
+		font-size: 6.4rem;
+		color: #ff0000;
+		letter-spacing: -4px;
+		font-weight: bold;
+	}
+	span {
+		font-size: 2rem;
+		color: #333333;
+		opacity: 0.6;
+		letter-spacing: -1px;
+	}
+}
+.our-menu-items {
+	@include flex-column;
+	text-align: center;
+}
+.our-menu-item {
+	padding: 0 40px;
+}
+.our-menu-item-text {
+	@include flex-column;
+	justify-content: center;
+	h4 {
+		@include our-menu-item-title;
+	}
+	span {
+		@include our-menu-item-text;
+	}
+}

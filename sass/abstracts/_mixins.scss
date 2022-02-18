@@ -32,3 +32,23 @@
 	justify-content: center;
 	align-items: center;
 }
+
+@mixin flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+//our-menu mixins
+@mixin our-menu-item-text {
+	font-size: 1.4rem;
+	color: #333333;
+	opacity: 0.6;
+	letter-spacing: -1px;
+}
+@mixin our-menu-item-title {
+	font-size: 2rem;
+	font-weight: bold;
+	letter-spacing: -1px;
+
+	color: $color-main-black;
+}
