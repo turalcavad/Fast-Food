@@ -285,6 +285,15 @@ body {
   letter-spacing: -6px;
 }
 
+.social-media-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .our-menu-btn-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -317,21 +326,23 @@ body {
 }
 
 .mobile-menu {
+  display: none;
   width: 32rem;
   position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
   z-index: 999;
+  margin-left: -500px;
   background: #ffffff;
   color: #1e1d23;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
 }
 
 .mobile-menu .mobile-nav li a {
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
   color: #1e1d23;
   line-height: 1.1;
   padding: 15px 2em;
@@ -361,6 +372,11 @@ body {
   background-color: green;
 }
 
+.social-media-wrapper,
+.mobile-nav {
+  margin-top: 30px;
+}
+
 .mobile-nav::before, .mobile-nav::after {
   content: "";
   display: inline-block;
@@ -369,9 +385,56 @@ body {
   background-color: red;
 }
 
-.mobile-social-media li a {
-  font-size: 1.5rem;
-  font-weight: 500;
+.fa-xmark {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  font-size: 32px;
   color: #1e1d23;
+  cursor: pointer;
+}
+
+.mobile-social-media li a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1e1d23;
+}
+
+.sidebar-active {
+  margin-left: 0;
+  display: block;
+}
+
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 9px;
+  }
+  .first-section header .desktop-menu,
+  #desktopSocialMedia {
+    display: none;
+  }
+  .first-section header .header-content-wrapper .header-left-side {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-content-wrapper {
+    -webkit-box-pack: initial !important;
+        -ms-flex-pack: initial !important;
+            justify-content: initial !important;
+  }
+  .logo img {
+    width: 60px !important;
+    height: 60px !important;
+    margin-left: 1rem !important;
+  }
+  .mobile-menu-button {
+    cursor: pointer;
+  }
+  .mobile-menu-button .fa-bars {
+    font-size: 2.4rem;
+    color: #ffffff;
+    margin-left: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

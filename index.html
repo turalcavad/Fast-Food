@@ -26,6 +26,9 @@
 			<header>
 				<div class="container-fluid header-content-wrapper">
 					<div class="header-left-side">
+						<div class="mobile-menu-button">
+							<i class="fa-solid fa-bars"></i>
+						</div>
 						<div class="logo">
 							<img
 								src="http://fast-food.bold-themes.com/main-demo/wp-content/uploads/sites/2/2017/01/logo-classic-red-background.png"
@@ -33,7 +36,7 @@
 							/>
 						</div>
 
-						<nav class="desktop-menu">
+						<nav id="desktopMenu" class="desktop-menu">
 							<ul class="header-nav">
 								<li><a href="">HOME</a></li>
 								<li><a href="">PAGES</a></li>
@@ -52,7 +55,7 @@
 										alt="logo"
 									/>
 								</div>
-								<div class="social-media-wrapper d-flex align-items-center">
+								<div id="socialMediaWrapper" class="social-media-wrapper">
 									<ul class="mobile-social-media">
 										<li>
 											<a href=""><i class="fa-brands fa-facebook-f"></i></a>
@@ -77,10 +80,11 @@
 									<li><a href="">SHOP</a></li>
 								</ul>
 							</div>
+							<i class="fa-solid fa-xmark"></i>
 						</nav>
 					</div>
 
-					<div class="social-media-wrapper d-flex align-items-center">
+					<div id="desktopSocialMedia" class="social-media-wrapper">
 						<ul>
 							<li>
 								<a href=""><i class="fa-brands fa-facebook-f"></i></a>
@@ -112,5 +116,7 @@
 		</section>
 
 		<div class="test"></div>
+
+		<script src="./sass/vendors/sidebarActive.js"></script>
 	</body>
 </html>

@@ -79,6 +79,10 @@ body {
 		}
 	}
 }
+.social-media-wrapper {
+	display: flex;
+	align-items: center;
+}
 .our-menu-btn-wrapper {
 	display: flex;
 	justify-content: center;
@@ -104,15 +108,17 @@ body {
 
 //mobile sidebar
 .mobile-menu {
+	display: none;
 	width: 32rem;
 	position: fixed;
 	top: 0;
 	left: 0;
 	height: 100vh;
 	z-index: 999;
+	margin-left: -500px;
 	background: #ffffff;
 	color: $color-main-black;
-	transition: all 0.3s;
+	transition: all 0.7s;
 
 	.mobile-nav li a {
 		@include mobile-nav;
@@ -133,6 +139,10 @@ body {
 		background-color: green;
 	}
 }
+.social-media-wrapper,
+.mobile-nav {
+	margin-top: 30px;
+}
 
 .mobile-nav {
 	&::before,
@@ -144,6 +154,18 @@ body {
 		background-color: red;
 	}
 }
+.fa-xmark {
+	position: absolute;
+	top: 10px;
+	right: 40px;
+	font-size: 32px;
+	color: $color-main-black;
+	cursor: pointer;
+}
 .mobile-social-media li a {
 	@include mobile-nav;
+}
+.sidebar-active {
+	margin-left: 0;
+	display: block;
 }
