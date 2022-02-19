@@ -1,5 +1,7 @@
 .our-menu-section {
 	background-image: url("http://fast-food.bold-themes.com/main-demo/wp-content/uploads/sites/2/2017/06/background-tree-white.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .main-our-menu {
 	@include flex-column;
@@ -27,14 +29,31 @@
 }
 .our-menu-item {
 	padding: 0 40px;
+	padding-bottom: 50px;
 }
 .our-menu-item-text {
 	@include flex-column;
+	align-items: center;
 	justify-content: center;
 	h4 {
 		@include our-menu-item-title;
 	}
 	span {
 		@include our-menu-item-text;
+	}
+}
+.our-menu-order-button-wrapper {
+	@include flex-center;
+}
+.our-menu-order-button {
+	@include fast-food-button;
+	background-color: transparent;
+	border: 2px solid #ff0000;
+	padding: 1rem;
+	margin: 7rem 0;
+	color: #ff0000;
+	&:hover {
+		background-color: #ff0000;
+		color: #ffffff;
 	}
 }
