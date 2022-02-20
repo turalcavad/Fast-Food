@@ -1,6 +1,17 @@
 html,
 body {
 	overflow-x: hidden;
+	font-family: "Oswald", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+	font-family: "Oswald", sans-serif;
 }
 .first-section {
 	display: flex;
@@ -51,7 +62,6 @@ body {
 		color: #ffffff;
 		font-size: 1.7rem;
 		font-weight: 600;
-		letter-spacing: -1px;
 		transition: 0.3s;
 		&:hover {
 			color: $color-vivid-red;
@@ -75,7 +85,7 @@ body {
 			color: #ffffff;
 			font-size: 9.6rem;
 			font-weight: bold;
-			letter-spacing: -6px;
+			letter-spacing: -1px;
 		}
 	}
 }

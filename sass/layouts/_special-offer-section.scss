@@ -1,4 +1,5 @@
 .special-offer-section {
+	@include flex-center;
 	height: 723px;
 	background-image: url("http://fast-food.bold-themes.com/main-demo/wp-content/uploads/sites/2/2017/06/cell-background-pizza-right.jpg");
 	// background-position: 50% 120.356px;
@@ -6,4 +7,48 @@
 
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+.speacial-offer-description {
+	@include flex-column;
+	justify-content: center;
+}
+.speacial-offer-promotion {
+	width: 11rem;
+	height: 2.5rem;
+	background-color: #75d007;
+	text-align: center;
+	margin-bottom: 10px;
+
+	span {
+		font-size: 1.5rem;
+		font-weight: 600;
+		color: #ffffff;
+	}
+}
+.special-offer-text {
+	h4 {
+		font-size: 5.8rem;
+		font-weight: bold;
+		color: #ffffff;
+		margin: 15px 0;
+		font-family: "Oswald", sans-serif;
+	}
+	span {
+		font-size: 2.4rem;
+		color: #ffffff;
+		opacity: 0.6;
+		letter-spacing: -1px;
+		font-weight: 300;
+	}
+}
+.special-offer-button {
+	@include fast-food-button;
+	background-color: transparent;
+	border: 2px solid #ffffff;
+	color: #ffffff;
+	margin-top: 15xp;
+	&:hover {
+		background-color: #ffffff;
+		color: $color-main-black;
+	}
 }

@@ -167,6 +167,18 @@ h6 {
 html,
 body {
   overflow-x: hidden;
+  font-family: "Oswald", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  font-family: "Oswald", sans-serif;
 }
 
 .first-section {
@@ -245,7 +257,6 @@ body {
   color: #ffffff;
   font-size: 1.7rem;
   font-weight: 600;
-  letter-spacing: -1px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -282,7 +293,7 @@ body {
   color: #ffffff;
   font-size: 9.6rem;
   font-weight: bold;
-  letter-spacing: -6px;
+  letter-spacing: -1px;
 }
 
 .social-media-wrapper {
@@ -482,7 +493,7 @@ body {
 }
 
 .our-menu-item-text span {
-  font-size: 14px;
+  font-size: 16px;
   color: #333333;
   opacity: 0.6;
   letter-spacing: -1px;
@@ -523,11 +534,82 @@ body {
 }
 
 .special-offer-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 723px;
   background-image: url("http://fast-food.bold-themes.com/main-demo/wp-content/uploads/sites/2/2017/06/cell-background-pizza-right.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.speacial-offer-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.speacial-offer-promotion {
+  width: 11rem;
+  height: 2.5rem;
+  background-color: #75d007;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.speacial-offer-promotion span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.special-offer-text h4 {
+  font-size: 5.8rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 15px 0;
+  font-family: "Oswald", sans-serif;
+}
+
+.special-offer-text span {
+  font-size: 2.4rem;
+  color: #ffffff;
+  opacity: 0.6;
+  letter-spacing: -1px;
+  font-weight: 300;
+}
+
+.special-offer-button {
+  width: 15rem;
+  height: 5rem;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-weight: 500;
+  font-size: 1.6rem;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  margin-top: 15xp;
+}
+
+.special-offer-button:hover {
+  background-color: #ffffff;
+  color: #1e1d23;
 }
 
 @media screen and (max-width: 991px) {
