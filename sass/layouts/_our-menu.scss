@@ -28,11 +28,14 @@
 .our-menu-item {
 	padding: 0 40px;
 	padding-bottom: 50px;
+	animation: fadeIn 2s linear;
+	animation-fill-mode: both;
 }
 .our-menu-item-text {
 	@include flex-column;
 	align-items: center;
 	justify-content: center;
+	padding: 20px;
 	h4 {
 		@include our-menu-item-title;
 	}
@@ -53,5 +56,28 @@
 	&:hover {
 		background-color: #ff0000;
 		color: #ffffff;
+	}
+}
+.animate-fade-in :nth-child(1) {
+	animation: fadeIn 0.5s linear;
+}
+.animate-fade-in :nth-child(2) {
+	animation: fadeIn 1s linear;
+}
+.animate-fade-in :nth-child(3) {
+	animation: fadeIn 1.5s linear;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: scale(0.1);
+	}
+	85% {
+		opacity: 1;
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
 	}
 }
