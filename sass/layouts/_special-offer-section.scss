@@ -17,7 +17,6 @@
 	height: 2.5rem;
 	background-color: #75d007;
 	text-align: center;
-	margin-bottom: 10px;
 
 	span {
 		font-size: 1.5rem;
@@ -37,16 +36,17 @@
 		font-size: 2.4rem;
 		color: #ffffff;
 		opacity: 0.6;
-		letter-spacing: -1px;
 		font-weight: 300;
 	}
+}
+.special-offer-button-wrapper {
+	margin-top: 10px;
 }
 .special-offer-button {
 	@include fast-food-button;
 	background-color: transparent;
 	border: 2px solid #ffffff;
 	color: #ffffff;
-	margin-top: 15xp;
 	&:hover {
 		background-color: #ffffff;
 		color: $color-main-black;

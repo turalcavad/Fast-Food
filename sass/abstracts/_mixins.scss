@@ -43,14 +43,12 @@
 	font-size: 16px;
 	color: #333333;
 	opacity: 0.6;
-	letter-spacing: -1px;
 	width: 270px;
 	font-weight: 500;
 }
 @mixin our-menu-item-title {
 	font-size: 20px;
 	font-weight: bold;
-	letter-spacing: -1px;
 
 	color: $color-main-black;
 }
