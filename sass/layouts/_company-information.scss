@@ -1,0 +1,29 @@
+.company-information-section {
+	background-color: #75d007;
+}
+.infortmation-items {
+	display: flex;
+	text-align: center;
+}
+.information-item {
+	padding: 60px;
+}
+.information-item-description {
+	@include flex-column;
+	align-items: center;
+
+	h4 {
+		font-size: 20px;
+		font-weight: bold;
+		color: #ffffff;
+		letter-spacing: 1px;
+		width: 219px;
+		line-height: 60px;
+	}
+	span {
+		font-size: 15px;
+		color: #ffffff;
+		opacity: 0.6;
+		width: 234px;
+	}
+}
