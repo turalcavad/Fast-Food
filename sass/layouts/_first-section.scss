@@ -58,7 +58,7 @@ span {
 		display: inline-block;
 		margin: 0 25px;
 	}
-	.desktop-menu ul li a {
+	.header-nav-tags {
 		color: #ffffff;
 		font-size: 1.7rem;
 		font-weight: 600;
@@ -67,6 +67,7 @@ span {
 			color: $color-vivid-red;
 		}
 	}
+
 	.first-section-text {
 		justify-content: center;
 		height: 100vh;
@@ -194,5 +195,13 @@ span {
 .sticky {
 	position: fixed;
 	background-color: white;
-	transition: ease-in 0.5s;
+	transition: height 0.5s;
+}
+.logo-sticky {
+	display: none;
+}
+
+.sticky-navbar {
+	color: #333 !important;
+	font-weight: 400 !important;
 }

@@ -253,7 +253,7 @@ span {
   margin: 0 25px;
 }
 
-.first-section .desktop-menu ul li a {
+.first-section .header-nav-tags {
   color: #ffffff;
   font-size: 1.7rem;
   font-weight: 600;
@@ -261,7 +261,7 @@ span {
   transition: 0.3s;
 }
 
-.first-section .desktop-menu ul li a:hover {
+.first-section .header-nav-tags:hover {
   color: #cf2e2e;
 }
 
@@ -432,8 +432,17 @@ span {
 .sticky {
   position: fixed;
   background-color: white;
-  -webkit-transition: ease-in 0.5s;
-  transition: ease-in 0.5s;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
+}
+
+.logo-sticky {
+  display: none;
+}
+
+.sticky-navbar {
+  color: #333 !important;
+  font-weight: 400 !important;
 }
 
 .our-menu-section {
