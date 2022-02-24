@@ -387,6 +387,10 @@ span {
   margin-top: 30px;
 }
 
+.mobile-menu-button {
+  display: none;
+}
+
 .mobile-nav::before, .mobile-nav::after {
   content: "";
   display: inline-block;
@@ -410,9 +414,26 @@ span {
   color: #1e1d23;
 }
 
+.mobile-social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mobile-social-media li {
+  margin: 0 10px;
+}
+
 .sidebar-active {
   margin-left: 0;
   display: block;
+}
+
+.sticky {
+  position: fixed;
+  background-color: white;
+  -webkit-transition: ease-in 0.5s;
+  transition: ease-in 0.5s;
 }
 
 .our-menu-section {
@@ -707,6 +728,32 @@ span {
   width: 234px;
 }
 
+.pizza-slider-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.pizza-slider-wrapper h4 {
+  font-size: 74px;
+  font-weight: bold;
+  color: #ff0000;
+  line-height: 100px;
+}
+
+.pizza-slider-wrapper span {
+  font-size: 20px;
+  color: #333;
+  opacity: 0.6;
+  letter-spacing: 1px;
+}
+
 @media screen and (max-width: 991px) {
   html {
     font-size: 9px;
@@ -731,6 +778,7 @@ span {
     margin-left: 1rem !important;
   }
   .mobile-menu-button {
+    display: block;
     cursor: pointer;
   }
   .mobile-menu-button .fa-bars {

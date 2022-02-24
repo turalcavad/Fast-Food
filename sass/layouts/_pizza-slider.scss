@@ -1,0 +1,17 @@
+.pizza-slider-wrapper {
+	@include flex-column;
+	text-align: center;
+	margin-top: 50px;
+	h4 {
+		font-size: 74px;
+		font-weight: bold;
+		color: #ff0000;
+		line-height: 100px;
+	}
+	span {
+		font-size: 20px;
+		color: #333;
+		opacity: 0.6;
+		letter-spacing: 1px;
+	}
+}

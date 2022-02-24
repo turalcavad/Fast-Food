@@ -153,6 +153,9 @@ span {
 .mobile-nav {
 	margin-top: 30px;
 }
+.mobile-menu-button {
+	display: none;
+}
 
 .mobile-nav {
 	&::before,
@@ -175,7 +178,21 @@ span {
 .mobile-social-media li a {
 	@include mobile-nav;
 }
+.mobile-social-media {
+	display: flex;
+	li {
+		margin: 0 10px;
+	}
+}
 .sidebar-active {
 	margin-left: 0;
 	display: block;
+}
+
+//sticky header
+
+.sticky {
+	position: fixed;
+	background-color: white;
+	transition: ease-in 0.5s;
 }
