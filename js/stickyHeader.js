@@ -10,7 +10,8 @@ const logoSticky = document.querySelector(".logo-sticky");
 const header = document.querySelector(".header-content-wrapper");
 
 window.addEventListener("scroll", function () {
-	console.log(initialCoords.top);
+	// console.log(initialCoords.top);
+	// console.log(window.scrollY);
 	if (window.scrollY > initialCoords.top && window.innerWidth > 991) {
 		header.classList.add("sticky");
 		logo.style.display = "none";
@@ -29,3 +30,7 @@ window.addEventListener("scroll", function () {
 		logoSticky.style.display = "none";
 	}
 });
+
+
+
+  

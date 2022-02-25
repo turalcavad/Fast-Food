@@ -765,97 +765,69 @@ section {
 }
 
 .pizza-slider-wrapper h4 {
-  font-size: 74px;
+  font-size: 7.4rem;
   font-weight: bold;
   color: #ff0000;
   line-height: 100px;
 }
 
 .pizza-slider-wrapper span {
-  font-size: 20px;
+  font-size: 2rem;
   color: #333;
   opacity: 0.6;
   letter-spacing: 1px;
 }
 
-.custom-slider {
-  max-width: 100rem;
-  height: 60rem;
-  overflow: hidden;
-  margin: 0 auto;
-  position: relative;
+.pizza-slider-img {
+  width: 570px;
+  height: 490px;
+  padding: 0 40px;
 }
 
-.slide-item {
-  position: absolute;
-  top: 0;
-  width: 100%;
+.slider-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.slider__btn {
-  position: absolute;
-  top: 50%;
-  z-index: 10;
-  border: none;
-  background: rgba(255, 255, 255, 0.7);
-  font-family: inherit;
-  color: #333;
-  border-radius: 50%;
-  height: 5.5rem;
-  width: 5.5rem;
-  font-size: 3.25rem;
-  cursor: pointer;
-}
-
-.slider__btn--left {
-  left: 6%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.slider__btn--right {
-  right: 6%;
-  -webkit-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
-}
-
-.dots {
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+.pizza-slider-item-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.dots__dot {
-  border: none;
-  background-color: #b9b9b9;
-  opacity: 0.7;
-  height: 1rem;
-  width: 1rem;
-  border-radius: 50%;
-  margin-right: 1.75rem;
-  cursor: pointer;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  -webkit-box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7);
-          box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7);
+.pizza-slider-item-description h4 {
+  font-size: 57px;
+  font-weight: 900;
+  color: #262626;
+  line-height: 100px;
+}
+
+.pizza-slider-item-description span {
+  font-size: 24px;
+  width: 548px;
+  color: #333333;
+  opacity: 0.6;
+}
+
+.pizza-slider-order-button {
+  width: 15rem;
+  height: 5rem;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-weight: 500;
+  font-size: 1.6rem;
 }
 
 @media screen and (max-width: 991px) {

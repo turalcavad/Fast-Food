@@ -18,7 +18,15 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
 		/>
-
+		<!-- carousel -->
+		<link
+			rel="stylesheet"
+			href="./sass/vendors/owl-carousel/assets/owl.carousel.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="/sass/vendors/owl-carousel/assets/owl.theme.default.css"
+		/>
 		<!-- bootstrap -->
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -416,35 +424,47 @@
 							</div>
 						</div>
 
-						<!-- slider begins -->
+						<div class="owl-carousel owl-theme">
+							<div class="item slider-item">
+								<div class="pizza-slider-img">
+									<img
+										src="./sass/uploads/images/slider images/slider-pizza-img-1.png"
+										alt=""
+									/>
+								</div>
 
-						<div class="custom-slider">
-							<div class="slide-item slide--1">
-								<img
-									src="./sass/uploads/images/slider images/slider-pizza-img-1.png"
-									alt=""
-								/>
+								<div class="pizza-slider-item-description">
+									<h4>JALAPENO</h4>
+									<span
+										>The different toppings and styles of pizza are endless. You
+										can even explore different crust options like pretzel or
+										stuffed.
+									</span>
+								</div>
 							</div>
 
-							<div class="slide-item slide--2"">
-								<img
-									src="./sass/uploads/images/slider images/slider-pizza-img-2.png"
-									alt=""
-								/>
+							<div class="item slider-item">
+								<div class="pizza-slider-img">
+									<img
+										src="./sass/uploads/images/slider images/slider-pizza-img-2.png"
+										alt=""
+									/>
+								</div>
+
+								<div class="pizza-slider-item-description">
+									<h4>JALAPENO</h4>
+									<span
+										>The different toppings and styles of pizza are endless. You
+										can even explore different crust options like pretzel or
+										stuffed.
+									</span>
+								</div>
+								<div class="pizza-slider-button">
+									<a class="pizza-slider-order-button" href="ORDER NOW"></a>
+								</div>
 							</div>
-
-							<div class="slide-item slide--3"">
-								<img
-									src="./sass/uploads/images/slider images/slider-pizza-img-3.png"
-									alt=""
-								/>
-							</div>
-
-							<button class="slider__btn slider__btn--left">&larr;</button>
-        					<button class="slider__btn slider__btn--right">&rarr;</button>
-							<div class="dots"></div>
-
 						</div>
+						<!-- slider begins -->
 					</div>
 				</section>
 			</main>
@@ -483,10 +503,20 @@
 			<i class="fa-solid fa-xmark"></i>
 		</nav>
 
+		<!-- jquery -->
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+		<!-- //carousel -->
+		<script src="./sass/vendors/owl-carousel/owl.carousel.min.js"></script>
+
 		<!-- javascript -->
 		<script src="./js/sidebarActive.js"></script>
 		<script src="./js/stickyHeader.js"></script>
 		<script src="./js/revealSections.js"></script>
 		<script src="./js/customSlider.js"></script>
+		<script src="./js/owlCarousel.js"></script>
 	</body>
 </html>
