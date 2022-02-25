@@ -166,7 +166,7 @@ h6 {
 
 html,
 body {
-  overflow-x: hidden;
+  overflow-x: visible;
   font-family: "Oswald", sans-serif;
 }
 
@@ -179,6 +179,13 @@ h6,
 p,
 span {
   font-family: "Oswald", sans-serif;
+}
+
+section {
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, -webkit-transform 1s;
+  transition: transform 1s, opacity 1s;
+  transition: transform 1s, opacity 1s, -webkit-transform 1s;
 }
 
 .first-section {
@@ -312,6 +319,7 @@ span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 20px;
 }
 
 .our-menu-btn-wrapper a:hover {
@@ -434,6 +442,7 @@ span {
   background-color: white;
   -webkit-transition: height 0.5s;
   transition: height 0.5s;
+  z-index: 999;
 }
 
 .logo-sticky {
@@ -441,8 +450,15 @@ span {
 }
 
 .sticky-navbar {
+  background-color: rgba(255, 255, 255, 0.9);
   color: #333 !important;
   font-weight: 400 !important;
+}
+
+.section-hidden {
+  opacity: 0;
+  -webkit-transform: translateY(8rem);
+          transform: translateY(8rem);
 }
 
 .our-menu-section {
@@ -482,6 +498,7 @@ span {
 }
 
 .our-menu-items {
+  opacity: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -495,10 +512,13 @@ span {
 .our-menu-item {
   padding: 0 40px;
   padding-bottom: 50px;
-  -webkit-animation: fadeIn 2s linear;
-          animation: fadeIn 2s linear;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+}
+
+.our-menu-pizza-row {
+  -webkit-transition: opacity 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms, -webkit-transform 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms;
+  transition: opacity 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms, -webkit-transform 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms;
+  transition: transform 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms, opacity 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms;
+  transition: transform 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms, opacity 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms, -webkit-transform 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms;
 }
 
 .our-menu-item-text {
@@ -564,53 +584,39 @@ span {
   color: #ffffff;
 }
 
-.animate-fade-in :nth-child(1) {
-  -webkit-animation: fadeIn 0.5s linear;
-          animation: fadeIn 0.5s linear;
+.animate-fade-in {
+  opacity: 1;
+  -webkit-transition: opacity 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms, -webkit-transform 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms;
+  transition: opacity 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms, -webkit-transform 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms;
+  transition: transform 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms, opacity 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms;
+  transition: transform 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms, opacity 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms, -webkit-transform 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms;
 }
 
-.animate-fade-in :nth-child(2) {
-  -webkit-animation: fadeIn 1s linear;
-          animation: fadeIn 1s linear;
+.our-menu-pizza-row :nth-child(1) {
+  -webkit-transition: opacity 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms, -webkit-transform 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms;
+  transition: opacity 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms, -webkit-transform 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms;
+  transition: transform 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms, opacity 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms;
+  transition: transform 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms, opacity 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms, -webkit-transform 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms;
+  -webkit-transition-delay: 200ms;
+          transition-delay: 200ms;
 }
 
-.animate-fade-in :nth-child(3) {
-  -webkit-animation: fadeIn 1.5s linear;
-          animation: fadeIn 1.5s linear;
+.our-menu-pizza-row :nth-child(2) {
+  -webkit-transition: opacity 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms, -webkit-transform 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms;
+  transition: opacity 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms, -webkit-transform 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms;
+  transition: transform 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms, opacity 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms;
+  transition: transform 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms, opacity 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms, -webkit-transform 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms;
+  -webkit-transition-delay: 400ms;
+          transition-delay: 400ms;
 }
 
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(0.1);
-            transform: scale(0.1);
-  }
-  85% {
-    opacity: 1;
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(0.1);
-            transform: scale(0.1);
-  }
-  85% {
-    opacity: 1;
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
+.our-menu-pizza-row :nth-child(3) {
+  -webkit-transition: opacity 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms, -webkit-transform 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms;
+  transition: opacity 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms, -webkit-transform 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms;
+  transition: transform 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms, opacity 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms;
+  transition: transform 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms, opacity 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms, -webkit-transform 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms;
+  -webkit-transition-delay: 600ms;
+          transition-delay: 600ms;
 }
 
 .special-offer-section {
@@ -638,9 +644,18 @@ span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  opacity: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transform: translateX(-800px);
+          transform: translateX(-800px);
+}
+
+.description-active {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .speacial-offer-promotion {

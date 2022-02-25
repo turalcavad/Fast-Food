@@ -1,6 +1,6 @@
 html,
 body {
-	overflow-x: hidden;
+	overflow-x: visible;
 	font-family: "Oswald", sans-serif;
 }
 h1,
@@ -12,6 +12,9 @@ h6,
 p,
 span {
 	font-family: "Oswald", sans-serif;
+}
+section {
+	transition: transform 1s, opacity 1s;
 }
 .first-section {
 	display: flex;
@@ -97,6 +100,7 @@ span {
 .our-menu-btn-wrapper {
 	display: flex;
 	justify-content: center;
+	margin-top: 20px;
 	a:hover {
 		color: #75d007;
 	}
@@ -196,12 +200,21 @@ span {
 	position: fixed;
 	background-color: white;
 	transition: height 0.5s;
+	z-index: 999;
 }
 .logo-sticky {
 	display: none;
 }
 
 .sticky-navbar {
+	background-color: rgba(255, 255, 255, 0.9);
 	color: #333 !important;
 	font-weight: 400 !important;
+}
+
+//general css
+
+.section-hidden {
+	opacity: 0;
+	transform: translateY(8rem);
 }

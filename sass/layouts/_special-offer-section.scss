@@ -10,7 +10,13 @@
 }
 .speacial-offer-description {
 	@include flex-column;
+	opacity: 0;
 	justify-content: center;
+	transform: translateX(-800px);
+}
+.description-active {
+	opacity: 1;
+	transform: translateX(0);
 }
 .speacial-offer-promotion {
 	width: 11rem;
