@@ -1,0 +1,61 @@
+.contact-section-wrapper {
+	background-color: #232323;
+}
+.contact-info-wrapper {
+	@include flex-center;
+	@include flex-column;
+}
+
+.call-us-wrapper {
+	@include flex-center;
+	background-color: #75d007;
+	width: 80px;
+	height: 30px;
+	span {
+		font-size: 16px;
+		color: #fff;
+		font-weight: 700;
+	}
+}
+
+.contact-img {
+	img {
+		height: 568px;
+		width: 100%;
+	}
+}
+
+.contact-number {
+	span {
+		font-size: 36px;
+		color: #fff;
+		font-weight: 800;
+	}
+}
+.fa-clock,
+.fa-location-dot {
+	font-size: 64px;
+	color: #75d007;
+}
+.fa-location-dot {
+	font-size: 84px;
+}
+.open-hours-wrapper {
+	display: flex;
+}
+.location-info-wrapper {
+	display: flex;
+}
+.open-hours-info,
+.location-info {
+	@include flex-column;
+	padding: 0 20px;
+	span {
+		font-size: 17px;
+		opacity: 0.6;
+		color: #ffffff;
+	}
+	span:not(:first-child) {
+		margin-top: 5px;
+	}
+}
