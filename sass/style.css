@@ -565,7 +565,7 @@ section {
 }
 
 .our-menu-order-button {
-  width: 15rem;
+  width: 16rem;
   height: 5rem;
   text-align: center;
   -webkit-transition: 0.5s;
@@ -691,7 +691,7 @@ section {
 }
 
 .special-offer-button {
-  width: 15rem;
+  width: 16rem;
   height: 5rem;
   text-align: center;
   -webkit-transition: 0.5s;
@@ -779,9 +779,12 @@ section {
 }
 
 .pizza-slider-img {
-  width: 570px;
-  height: 490px;
   padding: 0 40px;
+}
+
+.pizza-slider-img img {
+  height: auto;
+  max-width: 100%;
 }
 
 .slider-item {
@@ -804,35 +807,32 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .pizza-slider-item-description h4 {
-  font-size: 57px;
+  font-size: 5rem;
   font-weight: 900;
   color: #262626;
   line-height: 100px;
 }
 
 .pizza-slider-item-description span {
-  font-size: 24px;
+  font-size: 2rem;
   width: 548px;
   color: #333333;
   opacity: 0.6;
 }
 
-.pizza-slider-order-button {
-  width: 15rem;
-  height: 5rem;
-  text-align: center;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  font-weight: 500;
-  font-size: 1.6rem;
+.pizza-slider-order-btn {
+  margin-top: 40px;
 }
 
 @media screen and (max-width: 991px) {
   html {
-    font-size: 9px;
+    font-size: 8px;
   }
   .first-section header .desktop-menu,
   #desktopSocialMedia {

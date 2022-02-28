@@ -17,9 +17,11 @@
 }
 
 .pizza-slider-img {
-	width: 570px;
-	height: 490px;
 	padding: 0 40px;
+	img {
+		height: auto;
+		max-width: 100%;
+	}
 }
 
 .slider-item {
@@ -29,21 +31,22 @@
 }
 .pizza-slider-item-description {
 	@include flex-column;
+	align-items: flex-start;
 	h4 {
-		font-size: 57px;
+		font-size: 5rem;
 		font-weight: 900;
 		color: #262626;
 		line-height: 100px;
 	}
 	span {
-		font-size: 24px;
+		font-size: 2rem;
 		width: 548px;
 		color: #333333;
 		opacity: 0.6;
 	}
 }
-.pizza-slider-order-button {
-	@include fast-food-button;
+.pizza-slider-order-btn {
+	margin-top: 40px;
 }
 
 // .custom-slider {
