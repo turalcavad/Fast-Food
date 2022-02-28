@@ -26,72 +26,75 @@ section {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	header {
-		.header-content-wrapper {
+}
+header {
+	.header-content-wrapper {
+		position: absolute;
+		top: 0;
+		z-index: 999;
+		display: flex;
+		justify-content: space-around;
+		.header-left-side {
 			display: flex;
-			justify-content: space-around;
-			.header-left-side {
+		}
+		.social-media-wrapper {
+			ul li a .fab,
+			.fa-brands {
+				transition: 0.3s;
+				font-size: 1.6rem;
+				&:hover {
+					color: $color-vivid-red;
+				}
+			}
+			ul {
 				display: flex;
 			}
-			.social-media-wrapper {
-				ul li a .fab,
-				.fa-brands {
-					transition: 0.3s;
-					font-size: 1.6rem;
-					&:hover {
-						color: $color-vivid-red;
-					}
-				}
-				ul {
-					display: flex;
-				}
-				ul li {
-					margin: 0 10px;
-				}
+			ul li {
+				margin: 0 10px;
 			}
 		}
 	}
-	header .desktop-menu {
-		display: flex;
-		align-items: center;
+}
+header .desktop-menu {
+	display: flex;
+	align-items: center;
+}
+.desktop-menu .header-nav {
+	display: flex;
+}
+.desktop-menu .header-nav li {
+	display: inline-block;
+	margin: 0 25px;
+}
+.header-nav-tags {
+	color: #ffffff;
+	font-size: 1.7rem;
+	font-weight: 600;
+	transition: 0.3s;
+	&:hover {
+		color: $color-vivid-red;
 	}
-	.desktop-menu .header-nav {
-		display: flex;
-	}
-	.desktop-menu .header-nav li {
-		display: inline-block;
-		margin: 0 25px;
-	}
-	.header-nav-tags {
+}
+
+.first-section-text {
+	justify-content: center;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+}
+.main-section-title {
+	text-align: center;
+
+	span {
 		color: #ffffff;
-		font-size: 1.7rem;
-		font-weight: 600;
-		transition: 0.3s;
-		&:hover {
-			color: $color-vivid-red;
-		}
+		font-size: 2.4rem;
 	}
-
-	.first-section-text {
-		justify-content: center;
-		height: 100vh;
-		display: flex;
-		flex-direction: column;
-		margin: 0 auto;
-	}
-	.main-section-title {
-		text-align: center;
-
-		span {
-			color: #ffffff;
-			font-size: 2.4rem;
-		}
-		h1 {
-			color: #ffffff;
-			font-size: 9.6rem;
-			font-weight: bold;
-			letter-spacing: -1px;
-		}
+	h1 {
+		color: #ffffff;
+		font-size: 9.6rem;
+		font-weight: bold;
+		letter-spacing: -1px;
 	}
 }
 .social-media-wrapper {
@@ -198,7 +201,7 @@ section {
 //sticky header
 
 .sticky {
-	position: fixed;
+	position: fixed !important;
 	background-color: white;
 	transition: height 0.5s;
 	z-index: 999;

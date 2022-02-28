@@ -75,6 +75,9 @@ const revealText = function () {
 	if (revealTop < windowHeight - revealPoint) {
 		textDescription.classList.add("description-active");
 		textDescription.classList.add("animate-fade-in");
+	} else {
+		textDescription.classList.remove("description-active");
+		textDescription.classList.remove("animate-fade-in");
 	}
 };
 
