@@ -35,6 +35,7 @@
 	ul {
 		display: flex;
 		li a {
+			margin-left: 10px;
 			font-size: 14px;
 			color: #333333;
 			font-weight: 400;
@@ -44,12 +45,11 @@
 				color: #ff0000;
 			}
 		}
-		li a:not(:first-child) {
-			margin-left: 10px;
-		}
 	}
 }
+
 .copyright-text {
+	margin-left: 10px;
 	span {
 		font-size: 14px;
 		color: #333333;
