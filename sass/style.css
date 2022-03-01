@@ -837,6 +837,10 @@ header .desktop-menu {
   background-color: #232323;
 }
 
+.contact-info {
+  margin: 30px;
+}
+
 .contact-info-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -988,6 +992,96 @@ header .desktop-menu {
   color: #ffffff;
 }
 
+.footer-upper {
+  background-color: #ff0000;
+}
+
+.footer-text h4 {
+  font-size: 3.6rem;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.footer-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer-button {
+  width: 16rem;
+  height: 5rem;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-weight: 500;
+  font-size: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #ffffff;
+}
+
+.footer-button:hover {
+  background-color: #ffffff;
+  color: #262626;
+}
+
+.footer-text,
+.footer-button-wrapper {
+  padding: 50px;
+}
+
+.copyright-text,
+.footer-nav {
+  padding: 30px;
+  padding-left: 70px;
+}
+
+.footer-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-nav ul li a {
+  font-size: 14px;
+  color: #333333;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.footer-nav ul li a:hover {
+  color: #ff0000;
+}
+
+.footer-nav ul li a:not(:first-child) {
+  margin-left: 10px;
+}
+
+.copyright-text span {
+  font-size: 14px;
+  color: #333333;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+}
+
 @media screen and (max-width: 991px) {
   html {
     font-size: 8px;
@@ -1026,9 +1120,39 @@ header .desktop-menu {
   }
 }
 
+@media screen and (max-width: 786px) {
+  .footer-description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .footer-text,
+  .footer-button-wrapper {
+    padding: 15px;
+  }
+  .copyright-text,
+  .footer-nav {
+    padding: 10px;
+  }
+  .footer-nav ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .contact-item {
     margin-top: 1rem;
+  }
+  .our-menu-item {
+    padding: 0;
+  }
+  .contact-img img {
+    height: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

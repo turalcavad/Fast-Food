@@ -1,6 +1,9 @@
 .contact-section-wrapper {
 	background-color: #232323;
 }
+.contact-info {
+	margin: 30px;
+}
 .contact-info-wrapper {
 	@include flex-center;
 	@include flex-column;

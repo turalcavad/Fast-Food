@@ -52,6 +52,7 @@ const pizzaItem = document.querySelectorAll(".our-menu-items");
 const ourMenuOrderBtn = document.querySelector(".our-menu-order-button");
 
 const textDescription = document.querySelector(".speacial-offer-description");
+let animated = false;
 
 const reveal = function () {
 	for (let i = 0; i < pizzaItem.length; i++) {
@@ -59,8 +60,15 @@ const reveal = function () {
 		let revealTop = pizzaItem[i].getBoundingClientRect().top;
 		let revealPoint = 200;
 
+		pizzaItem.forEach((pizza) => {
+			animated = pizza.classList.contains("animate-fade-in");
+		});
+		if (animated) {
+			break;
+		}
 		if (revealTop < windowHeight - revealPoint) {
 			pizzaItem[i].classList.add("animate-fade-in");
+			pizzaItem[i].parentElement.classList.add("animated");
 		} else {
 			pizzaItem[i].classList.remove("animate-fade-in");
 		}

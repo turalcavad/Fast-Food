@@ -32,9 +32,36 @@
 	}
 }
 
+@media screen and (max-width: 786px) {
+	.footer-description {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.footer-text,
+	.footer-button-wrapper {
+		padding: 15px;
+	}
+	.copyright-text,
+	.footer-nav {
+		padding: 10px;
+	}
+	.footer-nav {
+		ul {
+			flex-wrap: wrap;
+		}
+	}
+}
+
 @media screen and (max-width: 576px) {
 	.contact-item {
 		margin-top: 1rem;
 	}
-	
+	.our-menu-item {
+		padding: 0;
+	}
+	.contact-img {
+		img {
+			height: auto;
+		}
+	}
 }
