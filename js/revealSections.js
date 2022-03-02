@@ -55,22 +55,30 @@ const textDescription = document.querySelector(".speacial-offer-description");
 let animated = false;
 
 const reveal = function () {
-	for (let i = 0; i < pizzaItem.length; i++) {
-		let windowHeight = window.innerHeight;
-		let revealTop = pizzaItem[i].getBoundingClientRect().top;
-		let revealPoint = 200;
+	let innerWidth = window.innerWidth;
+	if (innerWidth > 768) {
+		for (let i = 0; i < pizzaItem.length; i++) {
+			let windowHeight = window.innerHeight;
+			let revealTop = pizzaItem[i].getBoundingClientRect().top;
+			let revealPoint = 200;
 
-		pizzaItem.forEach((pizza) => {
-			animated = pizza.classList.contains("animate-fade-in");
-		});
-		if (animated) {
-			break;
+			pizzaItem.forEach((pizza) => {
+				animated = pizza.classList.contains("animate-fade-in");
+			});
+			if (animated) {
+				break;
+			}
+			if (revealTop < windowHeight - revealPoint) {
+				pizzaItem[i].classList.add("animate-fade-in");
+				pizzaItem[i].parentElement.classList.add("animated");
+			} else {
+				pizzaItem[i].classList.remove("animate-fade-in");
+			}
 		}
-		if (revealTop < windowHeight - revealPoint) {
+	} else {
+		for (let i = 0; i < pizzaItem.length; i++) {
 			pizzaItem[i].classList.add("animate-fade-in");
 			pizzaItem[i].parentElement.classList.add("animated");
-		} else {
-			pizzaItem[i].classList.remove("animate-fade-in");
 		}
 	}
 };

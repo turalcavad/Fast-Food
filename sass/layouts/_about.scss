@@ -1,0 +1,95 @@
+.about-us-description {
+	padding-top: 12rem;
+	color: #ffffff;
+	margin-left: 30px;
+
+	h4 {
+		font-size: 17px;
+		font-family: "Montserrat", sans-serif;
+	}
+	h1 {
+		font-size: 64px;
+		font-weight: 800;
+		font-family: "Montserrat", sans-serif;
+		&::after {
+			content: " ";
+			clear: both;
+			width: 80px;
+			display: block;
+			margin-top: 10px;
+			border-bottom: 4px solid #ff0000;
+		}
+	}
+	span {
+		font-size: 20px;
+		opacity: 0.6;
+		font-family: "Montserrat", sans-serif;
+	}
+}
+.about-section {
+	background-image: url(./uploads/images/about/hero_inner_page.jpg);
+	background-size: cover;
+	background-position: 50% 0px;
+	background-repeat: no-repeat;
+	height: 447px;
+	display: flex;
+	align-items: center;
+}
+
+.our-crew-wrapper {
+	margin-left: 30px;
+}
+
+.learn-more {
+	width: 11rem;
+	height: 2.5rem;
+	background-color: #ff0000;
+	text-align: center;
+	@include flex-center;
+	span {
+		color: #ffffff;
+		font-size: 1.2rem;
+		font-weight: 800;
+		font-family: "Montserrat", sans-serif;
+	}
+}
+.our-crew-description {
+	h4 {
+		color: #262626;
+		font-size: 48px;
+		font-weight: 700;
+		font-family: "Montserrat", sans-serif;
+		line-height: 70px;
+	}
+	p {
+		font-size: 18px;
+		opacity: 0.6;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 100;
+	}
+}
+
+.crew-section {
+	padding-top: 70px;
+	background-color: #f7f8fa;
+}
+.crew-wrapper {
+	margin-left: 30px;
+}
+.crew-item {
+	background-color: rgba(255, 255, 255, 1);
+}
+.crew-img {
+	img {
+		width: 255px;
+		height: 255px;
+	}
+}
+
+.crew-description {
+	h4 {
+		color: #262626;
+		font-size: 19px;
+		font-family: "Montserrat", sans-serif;
+	}
+}

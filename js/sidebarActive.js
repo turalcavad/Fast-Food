@@ -8,10 +8,10 @@ closeButton.addEventListener("click", toggleSidebar);
 function toggleSidebar() {
 	sidebar.classList.toggle("sidebar-active");
 
-	if (sidebar.classList.contains("sidebar-active")) {
-		mainSection.style.transition = `0.5s`;
-		mainSection.style.transform = `translateX(${sidebar.offsetWidth}px)`;
-	} else {
-		mainSection.style.transform = `translateX(0)`;
-	}
+	// if (sidebar.classList.contains("sidebar-active")) {
+	// 	mainSection.style.transition = `0.5s`;
+	// 	mainSection.style.transform = `translateX(${sidebar.offsetWidth}px)`;
+	// } else {
+	// 	mainSection.style.transform = `translateX(0)`;
+	// }
 }
